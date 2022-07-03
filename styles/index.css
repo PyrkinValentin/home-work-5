@@ -1,0 +1,706 @@
+.art {
+	overflow: hidden;
+}
+
+.art, .features, .stats, .technology, .pricing, .reviews, .faq {
+	padding: 100px 0;
+}
+
+.art__content {
+	margin: 45px 78px;
+}
+
+.art__title {
+	margin: 11px auto 0;
+	
+	max-width: 400px;
+	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 5.4rem;
+	line-height: 5.9rem;
+	
+	color: #222;
+}
+
+.art__description {
+	margin: 18px auto 0;
+	
+	max-width: 394px;
+	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+
+	color: #222;
+}
+
+.art__buttons {
+	margin-top: 20px;
+}
+
+.art__buttons :nth-child(1) {
+	margin-right: 10px;
+}
+
+.art__img {
+	position: absolute;
+	top: 120px;
+	right: 100px;
+	
+	height: 533px;
+	overflow: hidden;
+	
+	transition: transform .3s ease-out;
+}
+
+.art__img:hover {
+	transform: translateY(-20px);
+}
+
+.art__img :nth-child(1) {
+	position: relative;
+	z-index: 2;
+}
+
+.art__img :nth-child(2) {
+	position: absolute;
+	top: 24px;
+	left: 27px;
+	z-index: 1;
+	
+	width: 322px;
+	height: 533px;
+	object-fit: cover;
+}
+
+.features__title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+	color: #fff;
+}
+
+.features__description {
+	margin: 5px auto 0;
+	
+	max-width: 600px;
+	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	
+	text-align: center;
+	
+	color: #fff;
+}
+
+/*Мне показалось будет лучше сделать анимацию амперсанда при наведении на секию features*/
+.features__description .animate {
+	display: inline-block;
+	transition: transform 1s ease-in-out;
+}
+
+.features__description:hover .animate {
+	transform: rotateX(360deg);
+}
+
+.features__items {
+	margin-top: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+}
+
+.features__item {
+	position: relative;
+	
+	border-radius: 20px;
+	background-color: #fff;
+	
+	width: 389px;
+}
+
+.features__item__top {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	
+	transform: translateX(-50%);
+}
+
+.features__item__top :nth-child(1) {
+	position: relative;
+	left: 50%;
+	
+	transform: translateX(-50%);
+	
+	z-index: 2;
+}
+
+.features__item__top :nth-child(2) {
+	position: absolute;
+	top: 14px;
+	left: 50%;
+	
+	z-index: 1;
+	
+	width: 196px;
+	height: 406px;
+	object-fit: cover;
+	
+	background-color: #222;
+	border-radius: 20px 20px 0 0;
+	
+	transform: translateX(-50%);
+}
+
+.features__item__bottom {
+	position: relative;
+	
+	margin-top: 293px;
+	padding: 48px 46px 40px;
+	
+	font-style: normal;
+	font-weight: 400;
+	
+	background: #F2F2F2;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 0 0 20px 20px;
+	
+	text-align: center;
+}
+
+.features__item__bottom__icon {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	transform: translate(-50%, -50%);
+	transition: border-radius .2s ease-in-out;
+	
+	width: 64px;
+	height: 64px;
+}
+
+.features__item__bottom__icon:hover {
+	border-radius: 64px;
+}
+
+.features__item__bottom__title {
+	font-size: 2.4rem;
+	line-height: 3rem;
+}
+
+.features__item__bottom__description {
+	margin-top: 11px;
+	
+	font-size: 1.5rem;
+	line-height: 2.2rem;
+	
+	color: #222;
+}
+
+.stats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.stats__item {
+	font-style: normal;
+	font-weight: 400;
+	
+	text-align: center;
+	
+	color: #fff;
+}
+
+.stats__item :nth-child(1) {
+	font-size: 9.6rem;
+	line-height: 9.6rem;
+}
+
+.stats__item :nth-child(2) {
+	margin-top: 20px;
+	
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.technology {
+	font-style: normal;
+	font-weight: 400;
+}
+
+.technology._flex-box{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.technology__content {
+	padding: 78px;
+}
+
+.technology__title {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+	color: #222;
+}
+
+.technology__sub-title {
+	margin-top: 5px;
+	
+	max-width: 409px;
+	
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	
+	
+	color: #222;
+}
+
+.technology__description {
+	margin-top: 15px;
+	
+	max-width: 403px;
+	
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	
+	color: #666;
+}
+
+.technology__img {
+	position: absolute;
+	top: 100px;
+	
+	height: 536px;
+	overflow: hidden;
+}
+
+.technology__img._right-100px {
+	right: 100px;
+}
+
+.technology__img._left-136px {
+	left: 100px;
+}
+
+.technology__img :nth-child(1) {
+	position: relative;
+	z-index: 2;
+}
+
+.technology__img :nth-child(2) {
+	position: absolute;
+	top: 24px;
+	left: 27px;
+	z-index: 1;
+	
+	width: 322px;
+	height: 533px;
+	object-fit: cover;
+}
+
+.theme-mode {
+	padding: 100px 0 120px;
+	
+	font-style: normal;
+	font-weight: 400;
+	
+	text-align: center;
+	
+	color: #fff;
+}
+
+.theme-mode__title {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.theme-mode__sub-title {
+	margin-top: 5px;
+	
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+}
+
+.theme-mode__description {
+	margin: 14px auto 0;
+
+	max-width: 578px;
+	
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+
+.theme-mode__demonstration {
+	position: relative;
+	line-height: 0;
+	margin-top: 36px;
+}
+
+.theme-mode__demonstration :nth-child(1) {
+	position: relative;
+	z-index: 2;
+	
+	height: 486px; /* Что бы не скакал скролл когда картинка загружается*/
+}
+
+.theme-mode__demonstration :nth-child(2) {
+	position: absolute;
+	top: 22px;
+	left: 50%;
+	
+	transform: translateX(-50%);
+	
+	width: 342px;
+	height: 464px;
+	object-fit: cover;
+	
+	z-index: 1;
+}
+
+.theme-mode hr {
+	margin: 0 auto;
+	
+	height: 2px;
+	background-color: #E5E5E5;
+	
+	max-width: 600px;
+}
+
+.theme-mode__select {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	gap: 20px;
+	
+	padding: 42px 0 20px;
+	
+	font-style: normal;
+	font-weight: 400;
+	
+	color: #fff;
+}
+
+.theme-mode__select__value {
+	padding: 0 10px;
+}
+
+.theme-mode__select__value :nth-child(2) {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.pricing {
+	font-style: normal;
+	font-weight: 400;
+	
+	text-align: center;
+}
+
+.pricing__title {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.pricing__sub-title {
+	margin-top: 5px;
+	
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	
+	color: #222;
+}
+
+.pricing__description {
+	margin: 14px auto 0;
+	
+	max-width: 568px;
+	
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	
+	color: #666;
+}
+
+.pricing__list {
+	margin-top: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+}
+
+.pricing__list__item {
+	max-width: 389px;
+	width: 100%;
+	
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	
+	font-style: normal;
+	font-weight: 400;
+	
+	text-align: center;
+}
+
+.pricing__list__item-title {
+	margin-top: 49px;
+	
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+
+.pricing__list__item-amount {
+	font-size: 10.8rem;
+	line-height: 12.4rem;
+	
+	letter-spacing: 8px;
+}
+
+.pricing__list__item-period {
+	margin-top: 25px;
+	
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+	color: #222;
+}
+
+.pricing__list__item-btn {
+	margin: 20px 0 50px;
+}
+
+.reviews {
+	font-style: normal;
+	font-weight: 400;
+}
+
+.reviews__title {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+	color: #222;
+}
+
+.reviews__sub-title {
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	
+	text-align: center;
+	
+	color: #222;
+}
+
+.reviews__description {
+	margin: 14px auto 0;
+	
+	max-width: 568px;
+	
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	
+	text-align: center;
+	
+	color: #666;
+}
+
+.reviews__items {
+	margin-top: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+}
+
+.reviews__item {
+	padding: 30px;
+	
+	background-color: #fff;
+	
+	border-radius: 20px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	max-width: 389px;
+	width: 100%;
+}
+
+.reviews__item__comment {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	
+	color: #222;
+}
+
+.reviews__item__user {
+	margin-top: 20px;
+	
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.reviews__item__user .avatar {
+	width: 48px;
+	height: 48px;
+	
+	border-radius: 48px;
+}
+
+.reviews__item__user-data {
+	color: #1B1A1A;
+}
+
+.reviews__item__username {
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+
+.reviews__item__role {
+	margin-top: 2px;
+	
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.app-download {
+	padding: 100px 0 140px;
+	
+	text-align: center;
+	
+	font-style: normal;
+	font-weight: 400;
+}
+
+.app-download__title {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	
+	color: #222;
+}
+
+.app-download__sub-title {
+	margin-top: 5px;
+	
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	
+	color: #222;
+}
+
+.app-download__description {
+	margin: 14px auto 0;
+	max-width: 589px;
+	
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	
+	color: #666;
+}
+
+.app-download__btn {
+	margin-top: 28px;
+}
+
+.faq {
+	font-style: normal;
+	font-weight: 400;
+}
+
+.faq__title {
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	
+	color: #222;
+}
+
+.faq__description {
+	margin-top: 13px;
+	
+	font-size: 1.5rem;
+	line-height: 2rem;
+
+	color: #222;
+}
+
+.faq__questions {
+	margin-top: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
+.faq__item {
+	max-width: 592px;
+	width: 100%;
+	
+	margin-bottom: 10px;
+}
+
+.faq__question {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	
+	color: #222;
+}
+
+.faq__answer {
+	margin-top: 10px;
+	
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	
+	color: #222;
+}
