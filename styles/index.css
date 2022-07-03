@@ -2,7 +2,7 @@
 	overflow: hidden;
 }
 
-.art, .features, .stats, .technology, .pricing, .reviews, .faq {
+.art, .features, .stats, .technology, .pricing, .testimonials, .faq {
 	padding: 100px 0;
 }
 
@@ -510,12 +510,12 @@
 	margin: 20px 0 50px;
 }
 
-.reviews {
+.testimonials {
 	font-style: normal;
 	font-weight: 400;
 }
 
-.reviews__title {
+.testimonials__title {
 	font-size: 1.4rem;
 	line-height: 2rem;
 	
@@ -526,7 +526,7 @@
 	color: #222;
 }
 
-.reviews__sub-title {
+.testimonials__sub-title {
 	font-size: 3.2rem;
 	line-height: 3.6rem;
 	
@@ -535,7 +535,7 @@
 	color: #222;
 }
 
-.reviews__description {
+.testimonials__description {
 	margin: 14px auto 0;
 	
 	max-width: 568px;
@@ -548,7 +548,7 @@
 	color: #666;
 }
 
-.reviews__items {
+.testimonials__items {
 	margin-top: 40px;
 	
 	display: flex;
@@ -557,7 +557,7 @@
 	gap: 16px;
 }
 
-.reviews__item {
+.testimonials__item {
 	padding: 30px;
 	
 	background-color: #fff;
@@ -572,14 +572,14 @@
 	width: 100%;
 }
 
-.reviews__item__comment {
+.testimonials__item__comment {
 	font-size: 1.6rem;
 	line-height: 2.4rem;
 	
 	color: #222;
 }
 
-.reviews__item__user {
+.testimonials__item__user {
 	margin-top: 20px;
 	
 	display: flex;
@@ -587,23 +587,23 @@
 	column-gap: 10px;
 }
 
-.reviews__item__user .avatar {
+.testimonials__item__user .avatar {
 	width: 48px;
 	height: 48px;
 	
 	border-radius: 48px;
 }
 
-.reviews__item__user-data {
+.testimonials__item__user-data {
 	color: #1B1A1A;
 }
 
-.reviews__item__username {
+.testimonials__item__username {
 	font-size: 1.6rem;
 	line-height: 2rem;
 }
 
-.reviews__item__role {
+.testimonials__item__role {
 	margin-top: 2px;
 	
 	font-size: 1.4rem;
