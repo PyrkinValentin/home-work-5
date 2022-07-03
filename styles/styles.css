@@ -88,3 +88,17 @@ body {
 ._text-indigo {
 	color: #B25DF8;
 }
+
+.to_top {
+	position: fixed;
+	right: 25px;
+	bottom: 24px;
+	
+	padding: 16px;
+	border-radius: 20px;
+	
+	cursor: pointer;
+	
+	background-color: #FF5437;
+	color: #fff;
+}
