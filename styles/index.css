@@ -3,7 +3,7 @@
 }
 
 .art, .features, .stats, .technology, .pricing, .testimonials, .faq {
-	padding: 100px 0;
+	padding: 100px 16px;
 }
 
 .art__content {
